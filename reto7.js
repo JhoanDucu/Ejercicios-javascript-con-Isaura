@@ -1,16 +1,16 @@
 /* 
 *
-* NO LO PUDE REALIZAR, ERA CON LA FUNCION MATH.MAX
+* LO HICE UWU, ERA CON LA FUNCION MATH.MAX
 *
 */
 
 let array = [2, 4, 1, 5, 6, 3];
-let sumaMayor = 0;
+let sumas = [];
 
 for (let i = 0; i < array.length - 1; i++) {
-    if(array[i]+array[i+1] > sumaMayor){
-         sumaMayor = array[i]+array[i+1]
-    }
-
+    suma = Math.max(array[i]+array[i+1]);
+    sumas.push(suma);
+    
 }
-console.log('Suma mayor: '+ sumaMayor);
+let sumaMayor = Math.max(...sumas);
+console.log(sumaMayor);
